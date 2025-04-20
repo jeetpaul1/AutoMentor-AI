@@ -1,141 +1,109 @@
-AutoMentor AI - AI-Powered Learning Assistant
-Problem Statement
+# AutoMentor AI - AI-Powered Learning Assistant
+
+## Problem Statement
+
 Learning complex technical concepts can be challenging for beginners. Traditional learning methods often:
+- Lack personalization for individual learning styles
+- Don't provide immediate feedback
+- Can be time-consuming to find quality explanations
+- Lack interactive elements to reinforce learning
 
-Lack personalization for individual learning styles
+## Solution: AutoMentor AI
 
-Don't provide immediate feedback
-
-Can be time-consuming to find quality explanations
-
-Lack interactive elements to reinforce learning
-
-Solution: AutoMentor AI
 AutoMentor is a GenAI-powered personalized learning assistant that:
+1. **Simplifies complex topics** through AI-generated explanations tailored to beginner levels
+2. **Dynamically creates quizzes** based on user input to reinforce learning
+3. **Provides real-time feedback** on quiz responses to guide understanding
+4. **Adapts to different learning needs** with premium features like voice interaction and extended quizzes
 
-Simplifies complex topics through AI-generated explanations tailored to beginner levels
+## Key Features
 
-Dynamically creates quizzes based on user input to reinforce learning
+### Core Features (MVP)
+- **Simplified Concept Explanation**: Input any technical topic and receive beginner-friendly explanations
+- **Interactive Quiz Generation**: Automatically generates multiple-choice quizzes based on the topic
+- **Real-time Feedback**: Immediate scoring and explanations for quiz answers
+- **Progress Tracking**: Visual progress bar for quiz completion
 
-Provides real-time feedback on quiz responses to guide understanding
+### Premium Features
+- **Voice Interaction**: Ask questions and receive answers via voice
+- **Extended Quizzes**: Generate longer quizzes (5-7 questions vs basic 3)
+- **Dark/Light Mode**: Customizable interface for comfortable learning
+- **Content Saving**: Save explanations and quizzes for later review
 
-Adapts to different learning needs with premium features like voice interaction and extended quizzes
+## Technical Implementation
 
-Key Features
-Core Features (MVP)
-Simplified Concept Explanation: Input any technical topic and receive beginner-friendly explanations
+### Frontend
+- Clean, responsive interface with dark/light mode support
+- Interactive quiz system with radio buttons and feedback
+- Progress tracking visualization
+- Voice input/output capabilities
 
-Interactive Quiz Generation: Automatically generates multiple-choice quizzes based on the topic
+### Backend Integration
+- Dual AI model support (Gemini and ChatGPT APIs)
+- Dynamic prompt engineering for explanations and quizzes
+- Local storage for premium status and preferences
 
-Real-time Feedback: Immediate scoring and explanations for quiz answers
+### AI Features
+- Natural language processing for topic understanding
+- Context-aware explanations tailored for beginners
+- Adaptive quiz generation based on topic complexity
+- Multi-model fallback system for reliability
 
-Progress Tracking: Visual progress bar for quiz completion
+## How to Use
 
-Premium Features
-Voice Interaction: Ask questions and receive answers via voice
+1. **Get Started**:
+   - Visit the homepage and click "Get Started Free"
+   - Or go directly to the product page
 
-Extended Quizzes: Generate longer quizzes (5-7 questions vs basic 3)
+2. **Ask a Question**:
+   - Type your question (e.g., "What is a loop in JavaScript?")
+   - Or use voice input by clicking the microphone button
 
-Dark/Light Mode: Customizable interface for comfortable learning
+3. **Receive Explanation**:
+   - Get a clear, beginner-friendly explanation
+   - Read through the generated content
 
-Content Saving: Save explanations and quizzes for later review
+4. **Take the Quiz**:
+   - Answer the automatically generated questions
+   - Get immediate feedback on your answers
+   - See your final score
 
-Technical Implementation
-Frontend
-Clean, responsive interface with dark/light mode support
+5. **Premium Features**:
+   - Unlock extended features with premium code "mentor123"
+   - Access longer quizzes and voice capabilities
 
-Interactive quiz system with radio buttons and feedback
+## Success Metrics
 
-Progress tracking visualization
+- **User Comprehension**: Measured through quiz performance and feedback
+- **Engagement**: Time spent and features used per session
+- **Adoption**: Number of returning users and premium conversions
+- **Accessibility**: Support for different learning styles (text, voice)
 
-Voice input/output capabilities
+## Future Enhancements
 
-Backend Integration
-Dual AI model support (Gemini and ChatGPT APIs)
+- User accounts for progress tracking across sessions
+- Topic difficulty levels (beginner, intermediate, advanced)
+- Multi-language support
+- Integration with coding environments
+- Community features for shared learning
 
-Dynamic prompt engineering for explanations and quizzes
+## Setup Instructions
 
-Local storage for premium status and preferences
+1. Clone the repository
+2. Open `index.html` in a browser to view the marketing site
+3. Open `product.html` to use the learning assistant
+4. For development, run a local server to avoid CORS issues
 
-AI Features
-Natural language processing for topic understanding
+## Dependencies
 
-Context-aware explanations tailored for beginners
+- Spline 3D viewer for interactive elements
+- Web Speech API for voice features
+- Gemini and OpenAI API connections
 
-Adaptive quiz generation based on topic complexity
+## License
 
-Multi-model fallback system for reliability
-
-How to Use
-Get Started:
-
-Visit the homepage and click "Get Started Free"
-
-Or go directly to the product page
-
-Ask a Question:
-
-Type your question (e.g., "What is a loop in JavaScript?")
-
-Or use voice input by clicking the microphone button
-
-Receive Explanation:
-
-Get a clear, beginner-friendly explanation
-
-Read through the generated content
-
-Take the Quiz:
-
-Answer the automatically generated questions
-
-Get immediate feedback on your answers
-
-See your final score
-
-Premium Features:
-
-Unlock extended features with premium code "mentor123"
-
-Access longer quizzes and voice capabilities
-
-Success Metrics
-User Comprehension: Measured through quiz performance and feedback
-
-Engagement: Time spent and features used per session
-
-Adoption: Number of returning users and premium conversions
-
-Accessibility: Support for different learning styles (text, voice)
-
-Future Enhancements
-User accounts for progress tracking across sessions
-
-Topic difficulty levels (beginner, intermediate, advanced)
-
-Multi-language support
-
-Integration with coding environments
-
-Community features for shared learning
-
-Setup Instructions
-Clone the repository
-
-Open index.html in a browser to view the marketing site
-
-Open product.html to use the learning assistant
-
-For development, run a local server to avoid CORS issues
-
-Dependencies
-Spline 3D viewer for interactive elements
-
-Web Speech API for voice features
-
-Gemini and OpenAI API connections
-
-License
 This project is open-source and available for educational purposes. Commercial use may require additional permissions.
+
+---
 
 AutoMentor AI represents an innovative approach to technical education, leveraging generative AI to make learning more accessible, interactive, and effective for beginners and beyond.
