@@ -1,0 +1,222 @@
+:root {
+    --primary: #7b5eff;
+    --primary-hover: #6247e0;
+    --accent: #00b894;
+    --background: #1e1e1e;
+    --surface: #2a2a2a;
+    --text: #ffffff;
+    --transition: all 0.3s ease;
+  }
+  
+  .light-mode {
+    --background: #ffffff;
+    --surface: #f5f5f5;
+    --text: #121212;
+  }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    transition: var(--transition);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  
+  textarea, select, input[type="password"] {
+    width: 95%;
+    padding: 0.85rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--primary);
+    background-color: var(--background);
+    color: var(--text);
+    transition: var(--transition);
+  }
+  
+  textarea:focus, select:focus, input:focus {
+    outline: none;
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 3px rgba(123, 94, 255, 0.2);
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    margin: 0.3rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  button.secondary {
+    background: var(--surface);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+  
+  button.secondary:hover {
+    background: var(--primary);
+    color: white;
+  }
+  
+  .output {
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+    white-space: pre-wrap;
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.25);
+    transition: var(--transition);
+  }
+  
+  .score-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+    color: gold;
+  }
+  
+  .question-block {
+    background-color: var(--surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+  }
+  
+  .light-mode .question-block {
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+  }
+  
+  .question-block p {
+    margin: 0.5rem 0;
+    font-weight: 500;
+  }
+  
+  .question-block label {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.75rem 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .question-block input[type="radio"] {
+    margin-right: 0.6rem;
+    transform: scale(1.25);
+  }
+  
+  .question-block label:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .light-mode .question-block label {
+    background-color: #f9f9f9;
+  }
+  
+  .light-mode .question-block label:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .question-block button {
+    margin-top: 1rem;
+    background-color: var(--accent);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .question-block button:hover {
+    background-color: #009b7d;
+  }
+  
+  .feedback {
+    font-weight: bold;
+    margin-top: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .feedback.correct {
+    color: limegreen;
+    background-color: rgba(0, 255, 0, 0.1);
+  }
+  
+  .feedback.incorrect {
+    color: crimson;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  .feedback.warning {
+    color: orange;
+    background-color: rgba(255, 165, 0, 0.1);
+  }
+  
+  #progressBarContainer {
+    width: 100%;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0 1.5rem;
+    display: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #progressBar {
+    height: 14px;
+    width: 100%;
+    background-color: limegreen;
+    transition: width 1s linear;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 1.25rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

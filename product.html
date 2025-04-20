@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoMentor AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🤖 AutoMentor AI</h2>
+    <textarea id="userInput" placeholder="Ask something like 'What is a loop in JS?'..."></textarea>
+    <button onclick="startVoiceInput()">🎙️ Voice Input</button>
+    <button id="submitBtn">Get Explanation & Quiz</button>
+
+    <input type="password" id="premiumCode" placeholder="Enter premium code" />
+    <button onclick="unlockPremium()">Unlock Premium</button>
+    <p id="premiumStatus" style="color: gold; font-weight: bold;"></p>
+
+    <label for="questionCount">Number of Questions:</label>
+    <select id="questionCount">
+      <option value="3">3</option>
+      <option value="5" disabled>5 (Premium)</option>
+      <option value="7" disabled>7 (Premium)</option>
+    </select>
+
+    <!-- <button id="voiceToggle">🎙 Start Listening</button> -->
+    <select id="aiSelect">
+      <option value="gemini">Gemini</option>
+      <option value="chatanywhere">ChatGPT</option>
+    </select>
+    <button onclick="toggleDarkMode()">☀️</button>
+
+    
+
+    <div id="progressBarContainer"><div id="progressBar"></div></div>
+
+    <button id="pauseBtn">⏸ Pause</button>
+    <button id="speakBtn" onclick="speakText()">🔊 Speak Text</button>
+
+    <div class="output" id="explanation"></div>
+    <div class="output" id="quiz"></div>
+    <div class="score-display" id="scoreDisplay"></div>
+    <button onclick="submitAllAnswers()">📝 Submit All</button>
+    <button onclick="copyContent()">📋 Copy All</button>
+    <button onclick="saveContent()">💾 Save to File</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
